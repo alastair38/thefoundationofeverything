@@ -1,6 +1,6 @@
 <div class="large-12 columns show-for-medium-up">
 	<div class="fixed contain-to-grid">
-	     <h3 class="site-title"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h3>
+	     <h1 class="site-title"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
 		<nav class="top-bar" role="navigation" data-topbar>
 
 

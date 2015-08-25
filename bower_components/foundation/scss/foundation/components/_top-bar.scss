@@ -15,7 +15,7 @@ $include-html-top-bar-classes: $include-html-classes !default;
 // Background color for the top bar
 $topbar-bg-color: none !default; //formally $oil
 $topbar-bg: none !default; //formally $topbar-bg-color
-$topmenu-bg: $oil !default;
+$topmenu-bg: $white !default;
 
 // Height and margin
 $topbar-height: rem-calc(45) !default;
@@ -26,7 +26,7 @@ $topbar-title-weight: $font-weight-normal !default;
 $topbar-title-font-size: rem-calc(17) !default;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $white !default;
+$topbar-link-color: $tuatara !default;
 $topbar-link-color-hover: $white !default;
 $topbar-link-color-active: $white !default;
 $topbar-link-color-active-hover: $white !default;
@@ -120,8 +120,27 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
     .contain-to-grid {
       width: 100%;
       background: $topmenu-bg;
+      box-shadow: 0px 1px 1px 1px #f3f3f3;
 
       .top-bar { margin-bottom: $topbar-margin-bottom; }
+    }
+
+    .top-bar {
+	.title-area {
+		z-index: 1;
+	}
+}
+
+    h1.site-title{
+        float: left;
+        width: auto;
+        font-size: 175%;
+        margin-bottom: 0;
+        padding: 0 1em;
+        text-align: center;
+       & a {
+           color: $tuatara;
+       }
     }
 
     // Wrapped around .top-bar to make it stick to the top

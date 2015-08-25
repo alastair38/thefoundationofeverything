@@ -73,7 +73,7 @@ style a page via class
     background: tomato;
     color: white;
     box-shadow: none;
-    border-bottom: 0px solid;
+    border-bottom: 2px solid tomato;
 }
 
 .skip-link {
@@ -85,7 +85,7 @@ style a page via class
 
 .skip-link:focus {
 	clip: auto;
-	height: auto;
+	height: 3.5em;
 	left: 6px;
 	top: 7px;
 	width: auto;
@@ -299,22 +299,7 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.top-bar {
-	.title-area {
-		z-index: 1;
-	}
-}
 
-h3.site-title{
-    float: left;
-    width: auto;
-    margin-bottom: 0;
-    padding: 0 1em;
-    text-align: center;
-   & a {
-       color: $ghost;
-   }
-}
 
 .off-canvas-list {
 	ul {
