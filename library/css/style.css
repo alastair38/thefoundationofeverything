@@ -4870,9 +4870,23 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px 1px #f3f3f3; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
+
+.top-bar .title-area {
+  z-index: 1; }
+
+h1.site-title {
+  float: left;
+  width: auto;
+  font-size: 175%;
+  margin-bottom: 0;
+  padding: 0 1em;
+  text-align: center; }
+  h1.site-title a {
+    color: #444444; }
 
 .fixed {
   width: 100%;
@@ -4934,7 +4948,7 @@ meta.foundation-mq-topbar {
       margin: 0; }
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
         font-weight: normal;
-        color: #FFFFFF;
+        color: #444444;
         width: 75%;
         display: block;
         padding: 0 0.9375rem; }
@@ -4943,7 +4957,7 @@ meta.foundation-mq-topbar {
     right: 0;
     top: 0; }
     .top-bar .toggle-topbar a {
-      color: #FFFFFF;
+      color: #444444;
       text-transform: uppercase;
       font-size: 0.8125rem;
       font-weight: bold;
@@ -5006,7 +5020,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
-      color: #FFFFFF;
+      color: #444444;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
       font-family: "Lato", Helvetica, Roboto, Arial, sans-serif;
@@ -5170,7 +5184,7 @@ meta.foundation-mq-topbar {
         margin-top: 0;
         font-size: 1.125rem; }
         .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-          color: #FFFFFF;
+          color: #444444;
           display: block; }
           .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
             background: none; }
@@ -6776,7 +6790,7 @@ style a page via class
   background: tomato;
   color: white;
   box-shadow: none;
-  border-bottom: 0px solid; }
+  border-bottom: 2px solid tomato; }
 
 .skip-link {
   font-size: 1em;
@@ -6786,7 +6800,7 @@ style a page via class
 
 .skip-link:focus {
   clip: auto;
-  height: auto;
+  height: 3.5em;
   left: 6px;
   top: 7px;
   width: auto;
@@ -6987,18 +7001,6 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.top-bar .title-area {
-  z-index: 1; }
-
-h3.site-title {
-  float: left;
-  width: auto;
-  margin-bottom: 0;
-  padding: 0 1em;
-  text-align: center; }
-  h3.site-title a {
-    color: #FAFAFA; }
-
 .off-canvas-list ul {
   margin-left: 0; }
   .off-canvas-list ul li a {
